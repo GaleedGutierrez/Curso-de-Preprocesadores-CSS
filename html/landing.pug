@@ -1,5 +1,6 @@
 -var titulo = "Titulo Principal"
 -var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
+//- -var usuario = "David"
 
 doctype html
 html(lang="en")
@@ -11,11 +12,18 @@ html(lang="en")
         title Document
     body 
         header 
-            h1 PlatziGAmes
-            a.boton(href="#") Registro
-        main.intro 
-            figure.intro__imagen: img(src="../images/imagen.png" alt="")
-            .intro_contenido
-                h2 #{titulos[0]}
-                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus quos mollitia temporibus quasi, quis inventore, adipisci reprehenderit vero ullam itaque sequi, et animi illum hic vitae suscipit ad assumenda! #[span Lorem ipsum dolor sit amet consectetur adipisicing elit.]
-                a.boton Leer Más
+            h1 PlatziGames
+            if usuario
+                a Hola #{usuario}
+            else
+                a.boton(href="#") Registro
+        main
+            seciton.intro
+                figure.intro__imagen: img(src="../images/imagen.png" alt="")
+                .intro_contenido
+                    h2 #{titulos[0]}
+                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus quos mollitia temporibus quasi, quis inventore, adipisci reprehenderit vero ullam itaque sequi, et animi illum hic vitae suscipit ad assumenda! #[span Lorem ipsum dolor sit amet consectetur adipisicing elit.]
+                    a.boton Leer Más
+            ul 
+                each titulo in titulos 
+                    li=titulo
