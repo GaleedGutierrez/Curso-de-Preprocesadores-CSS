@@ -6,6 +6,16 @@
 @Fuente2: 'Oswald', sans-serif;
 @fuente-base: 18px;
 
+.sombra-caja {
+    box-shadow: 0 5px 15px 0 fade(@color-primario, 50%);
+}
+
+.Oswald {
+    font-family: @Fuente2;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -22,8 +32,7 @@ html {
 h1,
 h2,
 h3 {
-    font-family: @Fuente2;
-    text-transform: uppercase;
+    .Oswald;
 }
 
 span, p, a {
