@@ -1,31 +1,5 @@
--var titulo = "Titulo Principal"
--var titulos = ["Titulo Principal", "Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
--var subtitulos = ["Subtitulo 1", "Subtitulo 2", "Subtitulo 3"]
-//- -var usuario = "David"
-
-mixin caja(imagen, titulo, contenido)
-    .caja
-        figure.caja__imagen: img(src="../images/"+imagen)
-        .caja__contenido 
-            h3=titulo
-            p=contenido
-            a.buton Leer Más
-
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(http-equiv="X-UA-Compatible" content="IE=edge")
-        meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        link(rel="stylesheet" href="../css/ejercicio-pub.css")
-        title Document
-    body 
-        header 
-            h1 PlatziGames
-            if usuario
-                a Hola #{usuario}
-            else
-                a.boton(href="#") Registro
+extend ./components/plantilla.pug
+block contenidos
         main.contenido
             seciton.intro
                 figure.intro__imagen: img(src="../images/imagen.png" alt="")
