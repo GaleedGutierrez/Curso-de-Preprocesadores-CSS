@@ -30,6 +30,7 @@ span,
 p,
 a {
   font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 .intro {
   width: 134rem;
@@ -108,8 +109,9 @@ a {
 }
 .articulo--principal h2 {
   margin: 4rem 0 4rem;
-  font-size: 5rem;
   text-align: center;
+  font-size: 5rem;
+  line-height: 6rem;
 }
 .articulo--principal h3 {
   font-size: 1.872rem;
