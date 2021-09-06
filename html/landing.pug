@@ -1,13 +1,13 @@
 extend ./components/plantilla.pug
 block contenidos
-        main.contenido
-            seciton.intro
-                figure.intro__imagen: img(src="../images/imagen.png" alt="")
-                .intro_contenido
-                    h2 #{titulos[0]}
-                    p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus quos mollitia temporibus quasi, quis inventore, adipisci reprehenderit vero ullam itaque sequi, et animi illum hic vitae suscipit ad assumenda! #[span Lorem ipsum dolor sit amet consectetur adipisicing elit.]
-                    a.boton Leer Más
-            .cajas-container
-                each subtitulo in subtitulos
-                    +caja("imagen.png", subtitulo, 
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.")
+    main.contenido
+        seciton.intro
+            figure.intro__imagen: img(src="../images/imagen.png" alt="")
+            .intro_contenido
+                h2 #{titulos[0]}
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi doloribus quos mollitia temporibus quasi, quis inventore, adipisci reprehenderit vero ullam itaque sequi, et animi illum hic vitae suscipit ad assumenda! #[span Lorem ipsum dolor sit amet consectetur adipisicing elit.]
+                a.boton Leer Más
+        .cajas-container
+            each subtitulo in subtitulos
+                +caja("imagen.png", subtitulo, 
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit.")
