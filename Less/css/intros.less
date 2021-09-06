@@ -31,11 +31,12 @@
     }
 
     &__categoria {
-        font-size: 1.6rem;
+        color: fade(@color-claro, 50%);
     }
 
     &__titulo {
         font-size: 5rem;
+        line-height: normal;
     }
 
     &__autor {
@@ -45,6 +46,7 @@
         top: 40rem;
         left: 0;
         right: 0;
+        line-height: normal;
         color: @color-claro;
         img {
             width: 6rem;
@@ -55,6 +57,9 @@
         }
         span {
             display: inline-block;
+        }
+        &-titulo {
+            color: fade(@color-claro, 50%);
         }
     }
 }
