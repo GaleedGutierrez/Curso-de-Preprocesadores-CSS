@@ -1,0 +1,25 @@
+include ../components/config.pug
+
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="../../css/ejercicio-pub.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Platzi Games
+    body 
+        include ../components/header.pug
+        main.main
+            section.main__left
+                h2 Menu
+                ul 
+                    each enlace in enlaces
+                        li.left-text__container: a.left-text=enlace
+            section.main__right
+                h2 Titulo principal
+                p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut vitae dicta deserunt a ea rem temporibus laboriosam labore, aliquam, consequatur, assumenda officiis eum aut nisi in sapiente! Sit, rerum quia.
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat vel rem quasi consequatur sit, provident impedit recusandae expedita, itaque praesentium vero consequuntur est sed? Expedita, reprehenderit provident? Possimus, culpa numquam!
+                a.boton Ver más
+        include ../components/footer.pug
