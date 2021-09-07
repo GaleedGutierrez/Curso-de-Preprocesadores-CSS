@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.perfil {
+  width: 50%;
+  padding-top: 5rem;
+}
+.perfil__avatar {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+}
+.perfil__avatar img {
+  border-radius: 50rem;
+}
+.perfil__nombre {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+}
+.perfil__titulo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+.perfil__boton {
+  display: block;
+  width: 10rem;
+  height: 4rem;
+  margin: 1.5rem auto;
+  padding-top: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 2rem;
+}
