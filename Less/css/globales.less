@@ -3,8 +3,9 @@
 @color-secundario: #8841da;
 @color-variacion: #012179;
 @Fuente1: "Lato", sans-serif;
-@Fuente2: 'Oswald', sans-serif;
+@Fuente2: "Oswald", sans-serif;
 @fuente-base: 18px;
+@modoOscuro: true;
 
 .sombra-caja {
     box-shadow: 0 5px 15px 0 fade(@color-primario, 50%);
@@ -14,6 +15,11 @@
     font-family: @Fuente2;
     text-transform: uppercase;
     font-weight: bold;
+}
+
+.fuente(@font-size) {
+    font-size: @font-size;
+    line-height: @font-size + 1rem;
 }
 
 * {
@@ -27,6 +33,11 @@ html {
     font-family: @Fuente1;
     line-height: @fuente-base + 10px;
     color: @color-primario;
+    .DarkMode;
+}
+
+img {
+    width: 100%;
 }
 
 h1,
@@ -35,6 +46,8 @@ h3 {
     .Oswald;
 }
 
-span, p, a {
-    font-size: 1.6rem;
+span,
+p,
+a {
+    .fuente(1.6rem);
 }
