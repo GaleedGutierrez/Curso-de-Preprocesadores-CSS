@@ -3,10 +3,7 @@
     height: 9rem;
     margin: 3rem auto 0;
     padding: 2rem 0 0 5rem;
-    color: $color-primario;
-    border-radius: 2rem;
-    background-color: $color-claro;
-
+    @include caja;
     i {
         display: block;
         float: left;
