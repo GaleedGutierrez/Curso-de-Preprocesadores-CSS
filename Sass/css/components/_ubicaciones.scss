@@ -1,0 +1,30 @@
+.ubicacion--perfil {
+    width: 50%;
+    height: 9rem;
+    margin: 3rem auto 0;
+    padding: 2rem 0 0 5rem;
+    color: $color-primario;
+    border-radius: 2rem;
+    background-color: $color-claro;
+
+    i {
+        display: block;
+        float: left;
+        padding-right: 1rem;
+        font-size: 4rem;
+        color: $color-variacion;
+    }
+
+    h2 {
+        font-family: $Fuente2;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        font-family: $Fuente2;
+        text-transform: uppercase;
+    }
+}
