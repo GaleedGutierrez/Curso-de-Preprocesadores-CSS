@@ -1,3 +1,10 @@
+$Fuente1: "Lato", sans-serif;
+$Fuente2: "Oswald", sans-serif;
+$color-primario: #333333;
+$color-claro: #ffffff;
+$color-secundario: #8841DA;
+$color-variacion: #3f579a;
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +15,7 @@
 
 html {
     font-size: 62.5%;
-    font-family: "Lato", sans-serif;
+    font-family: $Fuente1;
 }
 
 body {
@@ -28,6 +35,8 @@ main {
 .perfil {
     width: 50%;
     padding-top: 5rem;
+    color: $color-claro;
+    background-color: $color-secundario;
     &__avatar { 
         width: 5rem;
         height: 5rem;
@@ -37,9 +46,10 @@ main {
         }
     }
     &__nombre {
+        font-size: 2rem;
+        font-family: $Fuente2;
         text-transform: uppercase;
         text-align: center;
-        font-size: 2rem;
     }
     &__titulo {
         font-size: 1.2rem;
@@ -53,8 +63,35 @@ main {
         height: 4rem;
         margin: 1.5rem auto;
         padding-top: 1.5rem;
+        font-family: $Fuente2;
+        color: $color-claro;
         text-transform: uppercase;
         text-align: center;
         border-radius: 2rem;
+    }
+}
+
+.estadistica--perfil {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 9rem;
+    padding-top: 1.5rem;
+    margin: 0 auto;
+    border-radius: 2rem;
+    background-color: $color-claro;
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        font-family: $Fuente2;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    span {
+        font-size: 1.2rem;
+        font-family: $Fuente2;
+        text-align: center;
+        text-transform: uppercase;
     }
 }
