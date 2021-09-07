@@ -9,15 +9,13 @@
     h3 {
         font-size: 2rem;
         font-weight: 600;
-        font-family: $Fuente2;
         text-align: center;
-        text-transform: uppercase;
+        @include titulos($Fuente2)
     }
 
     span {
         font-size: 1.2rem;
-        font-family: $Fuente2;
         text-align: center;
-        text-transform: uppercase;
+        @include titulos($Fuente2)
     }
 }
