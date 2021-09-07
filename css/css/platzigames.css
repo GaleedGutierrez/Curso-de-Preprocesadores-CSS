@@ -20,9 +20,6 @@ html {
   line-height: 19px;
   color: #333333;
 }
-img {
-  width: 100%;
-}
 h1,
 h2,
 h3 {
@@ -33,8 +30,8 @@ h3 {
 span,
 p,
 a {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
 }
 .intro {
   width: 134rem;
@@ -100,7 +97,6 @@ a {
 }
 .intro__autor span {
   display: inline-block;
-  line-height: normal;
 }
 .intro__autor-titulo {
   color: rgba(255, 255, 255, 0.5);
@@ -111,11 +107,6 @@ a {
 }
 .articulo--principal__intro {
   font-size: 2.5rem;
-  line-height: 3.5rem;
-  margin: 2rem 0 1rem;
-}
-.articulo--principal p {
-  margin-bottom: 1rem;
 }
 .articulo--principal h2 {
   margin: 4rem 0 4rem;
@@ -124,9 +115,8 @@ a {
   line-height: 6rem;
 }
 .articulo--principal h3 {
-  margin: 0 0 1rem;
-  font-size: 2rem;
-  line-height: 3rem;
+  font-size: 1.9rem;
+  line-height: 2.9rem;
   color: #8841da;
 }
 .contenedor--cajas {
@@ -147,14 +137,6 @@ a {
 .caja__contenido {
   padding: 2.5rem;
   background-color: #ffffff;
-}
-.caja h3 {
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-  margin-bottom: 1.5rem;
-}
-.caja p {
-  margin-bottom: 1rem;
 }
 .caja span {
   color: #8841da;

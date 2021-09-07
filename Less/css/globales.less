@@ -30,8 +30,12 @@
 html {
     font-size: 62.5%;
     font-family: @Fuente1;
-    line-height: @fuente-base + 10px;
+    .fuente(@fuente-base);
     color: @color-primario;
+}
+
+img {
+    width: 100%
 }
 
 h1,
@@ -41,5 +45,5 @@ h3 {
 }
 
 span, p, a {
-    .fuente(1.6rem)
+    .fuente(1.6rem);
 }
