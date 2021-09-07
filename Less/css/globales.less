@@ -3,8 +3,9 @@
 @color-secundario: #8841da;
 @color-variacion: #012179;
 @Fuente1: "Lato", sans-serif;
-@Fuente2: 'Oswald', sans-serif;
+@Fuente2: "Oswald", sans-serif;
 @fuente-base: 18px;
+@modoOscuro: true;
 
 .sombra-caja {
     box-shadow: 0 5px 15px 0 fade(@color-primario, 50%);
@@ -32,6 +33,11 @@ html {
     font-family: @Fuente1;
     .fuente(@fuente-base);
     color: @color-primario;
+    .DarkMode;
+}
+
+img {
+    width: 100%;
 }
 
 img {
@@ -44,6 +50,8 @@ h3 {
     .Oswald;
 }
 
-span, p, a {
+span,
+p,
+a {
     .fuente(1.6rem);
 }
