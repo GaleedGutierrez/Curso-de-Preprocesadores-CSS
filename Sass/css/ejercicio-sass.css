@@ -81,8 +81,10 @@ main {
   height: 9rem;
   margin: 0 auto;
   padding-top: 1.5rem;
-  color: #333333;
   border-radius: 2rem;
+  -webkit-box-shadow: 0 2rem 3.3rem 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2rem 3.3rem 0 rgba(0, 0, 0, 0.5);
+  color: #333333;
   background-color: #ffffff;
 }
 .estadistica--perfil h3 {
@@ -104,8 +106,10 @@ main {
   height: 9rem;
   margin: 3rem auto 0;
   padding: 2rem 0 0 5rem;
-  color: #333333;
   border-radius: 2rem;
+  -webkit-box-shadow: 0 2rem 3.3rem 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2rem 3.3rem 0 rgba(0, 0, 0, 0.5);
+  color: #333333;
   background-color: #ffffff;
 }
 .ubicacion--perfil i {
@@ -125,14 +129,4 @@ main {
   font-size: 1.2rem;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
-}
-
-.galeria {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 50%;
-  height: 25rem;
-  margin: 1rem auto;
-  padding: 2rem 0 0 3rem;
 }
