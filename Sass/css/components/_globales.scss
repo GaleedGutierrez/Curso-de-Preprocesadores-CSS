@@ -12,6 +12,12 @@ $color-variacion: #3f579a;
     background-color: $color-claro;
 }
 
+@function get-opacity($color, $nivel) {
+    $opacidad: rgba($color, $nivel);
+    @return $opacidad;
+
+}
+
 * {
     margin: 0;
     padding: 0;
