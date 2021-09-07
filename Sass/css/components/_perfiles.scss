@@ -16,9 +16,8 @@
 
     &__nombre {
         font-size: 2rem;
-        font-family: $Fuente2;
-        text-transform: uppercase;
         text-align: center;
+        @include titulos($Fuente2);
     }
 
     &__titulo {
@@ -35,13 +34,12 @@
         height: 4rem;
         margin: 1.5rem auto;
         padding-top: 1.5rem;
-        font-family: $Fuente2;
         color: $color-claro;
         background-color: get-opacity($color-primario, 0.2);
-        text-transform: uppercase;
         text-align: center;
         border: 0.2rem solid get-opacity($color-claro, 0.3);
         border-radius: 2rem;
+        @include titulos($Fuente2)
     }
 }
 
