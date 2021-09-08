@@ -1,3 +1,4 @@
+$modoOscuroVeriable: true;
 $Fuente1: "Lato", sans-serif;
 $Fuente2: "Oswald", sans-serif;
 $color-primario: #333333;
@@ -45,19 +46,15 @@ $headers: (h1: 3rem, h2: 2.5rem, h3: 2rem);
 
 html {
     font-size: 62.5%;
-    @include titulos($Fuente1)
+    @include titulos($Fuente1);
+    @include modoOscuro($modoOscuroVeriable);
 }
 
 body {
     font-size: 1.6rem;
 }
 
-// img {
-//     width: 100%;
-// }
-
 main {
     display: flex;
     width: 100%;
-    height: 100vh;
 }
