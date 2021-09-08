@@ -11,6 +11,9 @@ html {
   font-family: "Lato", sans-serif;
   color: #333;
 }
+body {
+  font-size: 1.6rem;
+}
 .buscador {
   width: 100%;
   height: 25rem;
@@ -33,7 +36,7 @@ html {
   display: flex;
   width: 90%;
   margin: 0 auto;
-  padding: 3rem;
+  padding: 3rem 0;
 }
 .encabezado--con-filtros h2 {
   margin-top: 1rem;
@@ -47,6 +50,9 @@ html {
   height: 7.5rem;
   padding: 2rem;
   margin-left: auto;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2rem 3.3rem 0 rgba(0,0,0,0.2);
+          box-shadow: 0 2rem 3.3rem 0 rgba(0,0,0,0.2);
 }
 .encabezado--con-filtros .filtros span {
   font-family: "Oswald", sans-serif;
@@ -55,4 +61,37 @@ html {
 .encabezado--con-filtros .filtros a {
   margin-left: 2rem;
   font-size: 2.5rem;
+  color: #333;
+}
+.contenido {
+  margin-bottom: 4rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+.caja {
+  max-width: 40rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2rem 3.3rem 0 rgba(0,0,0,0.2);
+          box-shadow: 0 2rem 3.3rem 0 rgba(0,0,0,0.2);
+}
+.caja__contenido {
+  padding: 2rem;
+  background-color: #fff;
+}
+.caja__contenido span {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #8841da;
+}
+.caja__contenido h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
 }

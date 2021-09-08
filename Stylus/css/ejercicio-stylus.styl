@@ -5,6 +5,15 @@ Color-secundario = #8841da
 Color-claro = #ffffff
 
 
+contenedor()
+    display: flex
+    width: 90%
+    margin: 0 auto
+    padding: 3rem 0
+
+caja-sombra()
+    background-color: Color-claro
+    box-shadow: 0 2rem 3.3rem 0  rgba(0, 0, 0, 0.2)
 * 
     margin: 0
     padding: 0
@@ -17,6 +26,9 @@ html
     font-size: 62.5%
     font-family: Fuente1
     color: Color-primario
+
+body 
+    font-size: 1.6rem
 
 .buscador
     width: 100%
@@ -34,10 +46,7 @@ html
         outline: none
 
 .encabezado--con-filtros
-    display: flex
-    width: 90%
-    margin: 0 auto
-    padding: 3rem
+    contenedor()
     h2 
         margin-top: 1rem
         font-family: Fuente2
@@ -49,13 +58,34 @@ html
         height: 7.5rem
         padding: 2rem
         margin-left: auto
+        caja-sombra()
         span
             font-family: Fuente2
             text-transform: uppercase
         a 
             margin-left: 2rem
             font-size: 2.5rem
+            color: Color-primario
 
+.contenido 
+    margin-bottom: 4rem
+    justify-content: space-evenly
+    contenedor()
+
+.caja
+    max-width: 40rem
+    caja-sombra()
+    &__contenido 
+        padding: 2rem
+        background-color: Color-claro
+        span
+            font-family: Fuente2
+            text-transform: uppercase
+            color: Color-secundario
+        h3
+            font-family: Fuente2
+            font-weight: normal
+            text-transform: uppercase
 
 
 
