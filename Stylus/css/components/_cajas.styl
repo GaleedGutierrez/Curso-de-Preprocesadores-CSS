@@ -1,19 +1,22 @@
 .contenido 
-    margin-bottom: 4rem
     justify-content: space-evenly
     contenedor()
 
 .caja
     max-width: 43rem
+    margin-top: 3rem
     caja-sombra()
     &__contenido 
         padding: 2rem
         background-color: Color-claro
         span
-            font-family: Fuente2
-            text-transform: uppercase
+            titulos(Fuente2)
             color: Color-secundario
         h3
-            font-family: Fuente2
             font-weight: normal
-            text-transform: uppercase
+            titulos(Fuente2)
+
+.noticias 
+    margin-bottom: 9.5rem
+    &__caja:nth-child(2) h3
+        height: 5.4rem
