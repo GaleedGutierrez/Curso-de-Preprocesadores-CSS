@@ -26,6 +26,30 @@ html {
   font-size: 62.5%;
   font-family: "Lato", sans-serif;
 }
+html .perfil {
+  background-color: #ffffff;
+}
+html .perfil__boton {
+  background-color: rgba(51, 51, 51, 0.8);
+  border-color: #333333;
+}
+html .perfil__nombre, html .perfil__minibio h2, .perfil__minibio html h2 {
+  color: #8841DA;
+}
+html .perfil__titulo, html .perfil__minibio h3, .perfil__minibio html h3 {
+  color: rgba(51, 51, 51, 0.6);
+}
+html .estadistica--perfil span {
+  color: rgba(51, 51, 51, 0.6);
+}
+html .articulos {
+  width: 50%;
+  padding-right: 5rem;
+  background-color: #333333;
+}
+html .articulos h2, html .articulos p {
+  color: #ffffff;
+}
 
 body {
   font-size: 1.6rem;
@@ -36,7 +60,6 @@ main {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 100vh;
 }
 
 .perfil {
@@ -72,7 +95,7 @@ main {
   width: 10rem;
   height: 4rem;
   margin: 1.5rem auto;
-  padding-top: 1.5rem;
+  padding-top: 0.6rem;
   color: #ffffff;
   background-color: rgba(51, 51, 51, 0.2);
   text-align: center;
