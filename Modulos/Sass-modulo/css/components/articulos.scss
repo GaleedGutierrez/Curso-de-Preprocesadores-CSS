@@ -1,0 +1,26 @@
+.articulos {
+    width: 40%;
+    padding: 5rem 0 0 5rem;
+}
+
+.articulo {
+    margin-bottom: 7.5rem;
+    border-bottom: 0.3rem solid $color-secundario;
+
+    &__categoria {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $color-secundario;
+        @include titulos($Fuente2)
+    }
+
+    &__titulo {
+        font-size: 2rem;
+        @include titulos($Fuente2)
+    }
+
+    &__descripcion {
+        margin-bottom: 3rem;
+        padding-right: 10rem;
+    }
+}

@@ -1,0 +1,23 @@
+.DarkMode() when (@modoOscuro = true) {
+    background-color: @color-primario;
+
+    .intro {
+        background-color: @color-secundario;
+    }
+
+    .articulo--principal {
+        p,
+        h2 {
+            color: @color-claro;
+        }
+    }
+
+    .caja {
+        &__contenido {
+            background-color: @color-secundario;
+        }
+        span, h3, p, a {
+            color: @color-claro;
+        }
+    }
+}

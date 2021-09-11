@@ -1,0 +1,36 @@
+@mixin modoOscuro($darkMode) {
+    @if $darkMode {
+        .perfil {
+            background-color: $color-claro;
+
+            &__boton {
+                background-color: get-opacity($color-primario, 0.8);
+                border-color: get-opacity($color-primario, 1);
+            }
+
+            &__nombre {
+                color: $color-secundario;
+            }
+
+            &__titulo {
+                color: get-opacity($color-primario, 0.6);
+            }
+        }
+
+        .estadistica--perfil {
+            span {
+                color: get-opacity($color-primario, 0.6);
+            }
+        }
+
+        .articulos {
+            width: 50%;
+            padding-right: 5rem;
+            background-color: $color-primario;
+
+            h2, p {
+                color: $color-claro;
+            }
+        }
+    }
+}
