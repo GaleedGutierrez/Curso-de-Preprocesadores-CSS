@@ -1,0 +1,21 @@
+.estadistica--perfil {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    height: 9rem;
+    margin: 0 auto;
+    padding-top: 1.5rem;
+    @include caja;
+    h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        @include titulos($Fuente2)
+    }
+
+    span {
+        font-size: 1.2rem;
+        text-align: center;
+        @include titulos($Fuente2)
+    }
+}
