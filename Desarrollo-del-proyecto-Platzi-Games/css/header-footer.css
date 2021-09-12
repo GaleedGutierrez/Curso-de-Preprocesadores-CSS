@@ -454,6 +454,8 @@ output {
 [hidden] {
   display: none !important;
 }
+/* Media Queries Mixin
+**********************/
 h1 {
   font-size: 3rem;
   font-family: "Oswald", sans-serif;
@@ -518,9 +520,7 @@ main {
 }
 
 .nav--header ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   padding-top: 3.5rem;
 }
 .nav--header ul li {
@@ -532,11 +532,16 @@ main {
   font-weight: bold;
   text-transform: uppercase;
 }
+@media only screen and (min-width: 992px) {
+  .nav--header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 
 .header__busqueda {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   padding-top: 3.5rem;
 }
@@ -553,6 +558,13 @@ main {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+}
+@media only screen and (min-width: 992px) {
+  .header__busqueda {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer--principal {
