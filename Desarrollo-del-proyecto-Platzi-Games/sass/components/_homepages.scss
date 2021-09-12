@@ -1,9 +1,9 @@
 .contenedor--home {
     width: 100%;
+    min-height: 105rem;
     display: flex;
     flex-direction: column;
     @include media(desktop-s) {
-        height: 120rem;
         width: 130rem;
         margin: 0 auto;
         @include display-grid;
@@ -18,12 +18,12 @@
     @include grid-column(1, 4);
 }
 
-.banner-homepages {
+.banner--homepage {
     @include grid-row(2, 4);
     @include grid-column(4, 5);
 }
 
-.sidebar-listado {
+.sidebar--listado {
     @include grid-row(3, 5);
     @include grid-column(1, 2);
 }
@@ -43,7 +43,7 @@
     @include grid-column(2, 3);
 }
 
-.caja-fornite {
+.caja-fortnite {
     @include grid-row(4, 5);
     @include grid-column(3, 4);
 }
