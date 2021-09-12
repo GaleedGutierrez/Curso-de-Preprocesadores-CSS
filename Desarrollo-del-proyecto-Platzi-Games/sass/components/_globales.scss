@@ -12,13 +12,6 @@ $color-body: #f9fafc;
 $headers: (h1: 3rem, h2: 2.5rem, h3: 2rem);
 // End variables
 
-
-// Start mixins
-@mixin caja {
-    color: $color-primario;
-    box-shadow: 0 2rem 3.3rem 0 rgba(0, 0, 0, 0.2);
-}
-
 @mixin titulos($fuente) {
     @if $fuente == $Fuente1 {
         font-family: $Fuente1;
@@ -29,7 +22,6 @@ $headers: (h1: 3rem, h2: 2.5rem, h3: 2rem);
         text-transform: uppercase;
     }
 }
-// End mixins
 
 // Start functions
 @function get-opacity($color, $amount) {
@@ -42,7 +34,27 @@ $headers: (h1: 3rem, h2: 2.5rem, h3: 2rem);
         @include titulos($Fuente2);
     }
 }
+
+@function calculateRem($size) {
+    $remSize: $size / 1rem * 1rem;
+    @return $remSize;
+}
 // End functions
+
+// Start mixins
+@mixin caja {
+    color: $color-primario;
+    box-shadow: 0 2rem 3.3rem 0 rgba(0, 0, 0, 0.2);
+}
+
+
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size) * 1.5;
+}
+// End mixins
+
 
 * {
     margin: 0;
@@ -60,7 +72,8 @@ body {
     font-size: 1.6rem;
     color: $color-primario;
     background-color: $color-body;
-    @include titulos($Fuente1)
+    @include titulos($Fuente1);
+    @include font-size(1.8rem);
 }
 
 main {
