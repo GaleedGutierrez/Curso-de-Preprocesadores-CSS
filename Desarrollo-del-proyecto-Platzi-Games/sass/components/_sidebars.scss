@@ -1,0 +1,26 @@
+.sidebar--listado {
+    width: 31.5rem;
+    padding: 2rem;
+    @include caja();
+
+    h3 {
+        @include font-size(2rem);
+        @include titulos($Fuente2);
+    }
+
+    li {
+        margin: 1rem 0;
+        padding: 1rem 0;
+        border-top: 0.1rem solid #ccc;
+    }
+
+    a {
+        display: flex;
+        padding: 1rem 2rem;
+        color: $color-primario;
+    }
+    &__numero {
+        margin-right: 2rem;
+        color: get-opacity($color-primario, 0.5);
+    }
+}
