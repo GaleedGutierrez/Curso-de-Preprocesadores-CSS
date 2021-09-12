@@ -1,7 +1,9 @@
+@import "./components/_breakpoints.scss";
 @import "./components/_bootstrap_reboot.scss";
 @import "./components/_globales.scss";
 @import "./components/_headers.scss";
 @import "./components/_footers.scss";
 @import "./components/_grids.scss";
 @import "./components/_homepages.scss";
-@import "./components/_cajas.scss"
+@import "./components/_cajas.scss";
+@import "./components/estadisticas";

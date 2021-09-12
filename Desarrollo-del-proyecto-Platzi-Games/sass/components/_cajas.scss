@@ -1,15 +1,15 @@
 .contenedor--cajas {
-	max-width: 1400px;
+	max-width: 140rem;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-evenly;
 }
 
 .caja {
-	max-width: 430px;
+	max-width: 43rem;
 	@include caja;
 	&__contenido {
-		padding: 25px;
+		padding: 2.5rem;
 		background-color: $color-claro;		
 	}
 	&__categoria {
@@ -24,12 +24,12 @@
 }
 
 .contenido {
-	margin-bottom: 40px;
+	margin-bottom: 4rem;
 	justify-content: space-evenly;
 	display: flex;
 	width: 90%;
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 3rem 0;
 } 
 
 .caja--con-fondo {

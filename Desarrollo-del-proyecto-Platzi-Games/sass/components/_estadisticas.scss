@@ -1,0 +1,95 @@
+.estadistica--perfil {
+	display: flex;
+	width: 50%;
+	height: 8rem;
+	padding-top: 1.5rem;
+	margin: 0 auto;
+	justify-content: space-around;
+	border-radius: 2rem;
+	background-color: $color-claro;
+	@include caja;
+
+	h3 {
+		font-weight: 600;
+		font-size: 2rem;
+		text-align: center;
+		@include titulos($Fuente2);
+	}
+
+	span {
+		font-size: 1.2rem;
+		text-align: center;
+		color: get-opacity($color-primario, .5);
+		@include titulos($Fuente2);
+	}
+}
+
+.estadistica--articulos {
+	height: 7rem;
+	padding: 2rem;
+	border-top: 0.1rem solid #E9E9E9;
+
+	ul {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		justify-content: space-evenly;
+	}
+
+	li {
+		list-style: none;
+		color: get-opacity($color-primario, .20);
+	}
+
+	span {
+		margin-left: 1rem;
+	}
+}
+
+.caja--con-fondo__stats {
+	margin: 0 auto;
+	position: absolute;
+	bottom: 1rem;
+	border-top: none;
+	text-align: center;
+
+	ul {
+		display: flex;
+	}
+
+	li {
+		display: flex;
+		margin-right: 5rem;
+		opacity: .8;
+	}
+
+	i {
+		color: $color-claro;
+	}
+
+	span {
+		color: $color-claro;
+	}
+}
+
+.caja--con-fondo__stats {
+	margin: 0 auto;
+	position: absolute;
+	bottom: 1rem;
+	border-top: none;
+	text-align: center;
+	ul {
+		display: flex;
+	}
+	li {
+		display: flex;
+		margin-right: 5rem;
+		opacity: 0.8;
+	}
+	i {
+		color: $color-claro;
+	}
+	span {
+		color: $color-claro;
+	}
+}
