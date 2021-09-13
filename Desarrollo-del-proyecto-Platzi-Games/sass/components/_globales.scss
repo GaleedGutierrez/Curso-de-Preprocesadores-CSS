@@ -73,7 +73,9 @@ body {
     color: $color-primario;
     background-color: $color-body;
     @include titulos($Fuente1);
-    @include font-size(1.8rem);
+    @include media(desktop-s) {
+        @include font-size(1.8rem);
+    }
 }
 
 main {

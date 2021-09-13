@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* Media Queries Mixin
 **********************/
 /* Reboot Codes - Based on normalize.css v5.0.0
@@ -496,9 +495,13 @@ body {
   color: #333333;
   background-color: #f9fafc;
   font-family: "Lato", sans-serif;
-  font-size: 1.8rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
+}
+@media only screen and (min-width: 992px) {
+  body {
+    font-size: 1.8rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
 }
 
 main {
@@ -569,9 +572,12 @@ main {
 }
 
 .footer--principal {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  width: 100%;
   height: 16rem;
   margin-top: 3rem;
   padding: 0 2rem 2rem;
@@ -618,11 +624,11 @@ main {
   width: 100%;
   min-height: 105rem;
   display: initial;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 992px) {
   .contenedor--home {
     width: 130rem;
-    margin: 0 auto;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -764,11 +770,12 @@ main {
 }
 .caja--con-fondo img {
   display: block;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
   position: absolute;
   opacity: 0.5;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .caja--con-fondo__contenido {
   padding: 2rem;
@@ -798,17 +805,35 @@ main {
 .caja--grande {
   max-width: 100rem;
   height: 55rem;
+  margin: 0 1rem 2rem;
+}
+@media only screen and (min-width: 992px) {
+  .caja--grande {
+    margin: 0;
+  }
 }
 .caja--grande h2 {
   font-family: "Oswald", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
-  font-size: 5rem;
-  font-size: 5rem;
-  line-height: 7.5rem;
+  font-size: 3rem;
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+@media only screen and (min-width: 992px) {
+  .caja--grande h2 {
+    font-size: 5rem;
+    font-size: 5rem;
+    line-height: 7.5rem;
+  }
 }
 .caja--grande .caja--con-fondo__contenido {
-  padding-top: 20rem;
+  padding-top: 10rem;
+}
+@media only screen and (min-width: 992px) {
+  .caja--grande .caja--con-fondo__contenido {
+    padding-top: 20rem;
+  }
 }
 
 .caja--mediana {
@@ -816,9 +841,26 @@ main {
   height: 25rem;
 }
 
-.caja--pequeña {
-  max-width: 30rem;
-  height: 25rem;
+.caja--pequena {
+  height: 30rem;
+  margin: 0 1rem 2rem;
+}
+@media only screen and (min-width: 992px) {
+  .caja--pequena {
+    max-width: 30rem;
+    margin: 0;
+  }
+}
+.caja--pequena .caja--con-fondo__contenido {
+  padding: 0;
+}
+.caja--pequena .caja--con-fondo__contenido span {
+  margin: 4rem 0 3rem;
+}
+.caja--pequena .caja--con-fondo__contenido h2 {
+  margin: 0;
+  margin-left: 2rem;
+  margin-right: 10rem;
 }
 
 .estadistica--perfil {
